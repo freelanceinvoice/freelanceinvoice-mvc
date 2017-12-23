@@ -5,6 +5,13 @@ class Application
 {
     protected $identity;
     
+    protected $config;
+    
+    public function __construct(array $config)
+    {
+        $this->config = $config;
+    }
+    
     /**
      * Get the user identity
      * 
